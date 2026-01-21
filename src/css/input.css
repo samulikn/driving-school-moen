@@ -1,0 +1,16 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    /* --font-manrope: "Manrope" */
+    --font-space-mono: "Space Mono", monospace;
+
+    --color-background-light: #f5f8f8;
+    --color-background-dark: #0f2123;
+    --color-dark-grey: #101818;
+    --color-light-grey: #dae5e7;
+    --color-cayan: #008c9e;
+    --color-orange: #FF8A5B;
+    --color-dark-blue: #5e878d;
+}
