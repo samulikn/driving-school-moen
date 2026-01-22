@@ -12,12 +12,12 @@
     <title>Moen</title>
 </head>
 
-<body class="bg-background-light text-dark-grey pb-24">
+<body class="bg-background-light text-dark-grey pb-24 w-full">
     <header class="bg-white/80 backdrop-blur-md border-b border-light-grey">
         <div class="flex items-center p-4 lg:px-12 justify-between w-full mx-auto">
             <div class="flex items-center gap-2">
-                <div class="bg-cayan p-1.5 rounded-lg flex items-center justify-center">
-                    <img src="/src/assets/directions_car.svg" alt="car icon">
+                <div class="text-white bg-cayan p-1.5 rounded-lg flex items-center justify-center">
+                    <span class="material-symbols-outlined">school</span>
                 </div>
                 <h2 class="text-dark-grey text-2xl font-extrabold leading-tight tracking-tight">Moen</h2>
             </div>
@@ -32,33 +32,28 @@
     </header>
 
     <main class="mx-auto flex flex-col sm:p-12">
-        <section id="home" class=" flex flex-col gap-6 lg:flex-row-reverse lg:justify-between">
-            <div class="lg:basis-5/8">
-                <div class="overflow-hidden sm:rounded-xl lg:rounded-4xl">
-                    <div
-                        class="flex min-h-105 sm:min-h-192 flex-col gap-6 bg-cover bg-center bg-no-repeat items-start justify-start px-8 py-10 bg-[url('../../src/assets/images/car_667.webp')]
-                            sm:bg-[url('../../src/assets/images/car_768.webp')] lg:bg-[url('../../src/assets/images/car_1440.webp')]">
-                        <div class="flex flex-col gap-3 sm:gap-6 text-left lg:w-9/12">
-                            <div data-i18n="home.specialization"
-                                class="inline-flex bg-orange text-white text-sm font-bold uppercase tracking-widest px-2 py-1 rounded w-fit sm:mt-28 sm:text-lg">
-                                Automatic Specialization
-                            </div>
-                            <h1 data-i18n="home.title" class="text-white text-4xl font-black leading-[1.1] tracking-tight sm:text-5xl">
-                                Master the Road with Moen
-                            </h1>
-                            <p data-i18n="home.description" class="text-white/80 text-sm font-medium leading-relaxed sm:max-w-90 sm:text-md">
-                                Stress-free driving lessons in English and Dutch. Fast-track your license today.
-                            </p>
-                        </div>
-                    </div>
+        <section id="home" class="flex flex-col gap-6 lg:flex-row-reverse">
+            <div class="px-8 py-10 flex flex-col-reverse justify-center gap-6 bg-cover bg-center bg-no-repeat bg-[url('../../src/assets/images/school_car_667.webp')]
+                            sm:bg-[url('../../src/assets/images/school_car_768.webp')] lg:bg-[url('../../src/assets/images/school_car_1024.webp')]
+                            sm:rounded-xl lg:rounded-2xl overflow-hidden min-h-105 sm:h-172 sm:pl-16 lg:w-5/8 shrink-0">
+                <div data-i18n="home.specialization"
+                    class="bg-orange text-white text-sm font-bold uppercase px-2 py-1 rounded w-fit sm:text-lg">
+                    Automatic Specialization
                 </div>
+                <h1 data-i18n="home.title" class="sm:max-w-3/4 text-white text-4xl font-black leading-[1.1] sm:text-5xl">
+                    Master the Road with Moen
+                </h1>
             </div>
 
-            <div class="flex flex-col px-4">
-                <div class="px-4 pt-4">
-                    <h2 data-i18n="home.why" class="text-dark-grey text-2xl font-bold leading-tight tracking-tight sm:text-3xl">Why Choose Us
+            <div class="px-4 flex flex-col">
+                <div class="pt-4">
+                    <h2 data-i18n="home.why"
+                        class="text-dark-grey text-2xl font-bold leading-tight tracking-tight sm:text-3xl">Why
+                        Choose Us
                     </h2>
-                    <p data-i18n="home.whom" class="text-dark-blue text-sm mt-1 sm:text-lg">Tailored learning for the modern driver.</p>
+                    <p data-i18n="home.whom" class="text-wrap text-dark-blue text-sm mt-1 sm:text-lg">Tailored learning
+                        for the
+                        modern driver.</p>
                 </div>
                 <div class="grid grid-cols-1 py-4 sm:grid-cols-2 gap-3 lg:grid-cols-1">
                     <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
@@ -67,18 +62,22 @@
                             <span class="material-symbols-outlined">auto_transmission</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h3 data-i18n="home.car" class="text-dark-grey text-base font-bold leading-tight">Automatic</h3>
-                            <p data-i18n="home.car_gear" class="text-dark-blue text-xs leading-normal">Focus on the road, not the gear stick.</p>
+                            <h3 data-i18n="home.car" class="text-dark-grey text-base font-bold leading-tight">Automatic
+                            </h3>
+                            <p data-i18n="home.car_gear" class="text-dark-blue text-xs leading-normal">Focus on the
+                                road, not the gear stick.</p>
                         </div>
                     </article>
                     <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 lg:rounded-2xl">
-                        <div class="text-cayan bg-primary/10 w-10 h-10 rounded-lg flex items-center justify-center">
+                        <div class="text-cayan bg-cayan/10 w-10 h-10 rounded-lg flex items-center justify-center">
                             <span class="material-symbols-outlined">language</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h3 data-i18n="home.lang" class="text-dark-grey text-base font-bold leading-tight">Bilingual</h3>
-                            <p data-i18n="home.lang_spec" class="text-dark-blue text-xs leading-normal">Learn comfortably in
+                            <h3 data-i18n="home.lang" class="text-dark-grey text-base font-bold leading-tight">Bilingual
+                            </h3>
+                            <p data-i18n="home.lang_spec" class="text-dark-blue text-xs leading-normal">Learn
+                                comfortably in
                                 English or Dutch.</p>
                         </div>
                     </article>
@@ -88,22 +87,26 @@
                             <span class="material-symbols-outlined">schedule</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h3 data-i18n="home.time" class="text-dark-grey text-base font-bold leading-tight">Flexible</h3>
-                            <p data-i18n="home.time_agenda" class="text-dark-blue text-xs leading-normal">Book slots that fit your busy schedule.</p>
+                            <h3 data-i18n="home.time" class="text-dark-grey text-base font-bold leading-tight">Flexible
+                            </h3>
+                            <p data-i18n="home.time_agenda" class="text-dark-blue text-xs leading-normal">Book slots
+                                that fit your busy schedule.</p>
                         </div>
                     </article>
                 </div>
                 <div
-                    class="hidden mt-auto p-4 text-lg text-center font-semibold border rounded-2xl border-light-grey hover:border-cayan/50 cursor-pointer text-light-grey bg-cayan lg:block">
-                    <a href="#lessons" class=""></a>View packages</div>
+                    class="hidden p-4 text-lg text-center font-semibold border rounded-2xl border-light-grey hover:border-cayan/50 cursor-pointer text-light-grey bg-cayan lg:block">
+                    <a href="#lessons" class=""></a>View packages
+                </div>
             </div>
         </section>
 
-        <div class="mx-auto mt-4 px-4 pb-4 lg:mt-8 lg:w-3/4">
+        <div class="mt-4 px-4 pb-4 lg:mt-8">
             <div
                 class="flex flex-col gap-4 rounded-xl border-l-4 border-l-orange border border-light-grey bg-white p-5 shadow-sm">
                 <div class="flex flex-col gap-1">
-                    <p data-i18n="home.props" class="text-dark-grey text-lg font-bold leading-tight">Automatic is the Future</p>
+                    <p data-i18n="home.props" class="text-dark-grey text-lg font-bold leading-tight">Automatic is the
+                        Future</p>
                     <p data-i18n="home.props_text" class="text-dark-blue text-sm font-normal leading-relaxed">
                         90% of electric and modern hybrid cars are automatic. Start your journey with the technology of
                         tomorrow.
@@ -114,6 +117,7 @@
 
         <section id="lessons" class="mt-12">
             <h2 class="text-center text-2xl font-bold text-cayan">Lesson Packages</h2>
+            <!-- <img src="src/assets/images/school_car_1024.webp" alt=""> -->
         </section>
 
         <section id="contacts" class="mt-12">
@@ -121,8 +125,7 @@
         </section>
     </main>
 
-    <footer
-        class="bg-white/90 border-t border-light-grey pb-6">
+    <footer class="bg-white/90 border-t border-light-grey pb-6">
         <div class="flex justify-around items-center h-16 max-w-md mx-auto">
             <a class="flex flex-col items-center gap-1 text-cayan" href="#">
                 <span class="material-symbols-outlined text-[24px]!">home</span>
