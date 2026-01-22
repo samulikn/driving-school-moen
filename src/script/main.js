@@ -25,7 +25,6 @@ language.addEventListener("click", () => {
 
 async function loadLanguage(lang) {
     try {
-        console.log("start")
         const response = await fetch(`src/i18n/${lang}.json`);
         const data = await response.json();
 
