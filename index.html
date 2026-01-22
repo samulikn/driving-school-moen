@@ -33,14 +33,16 @@
 
     <main class="mx-auto flex flex-col sm:p-12">
         <section id="home" class="flex flex-col gap-6 lg:flex-row-reverse">
-            <div class="px-8 py-10 flex flex-col-reverse justify-center gap-6 bg-cover bg-center bg-no-repeat bg-[url('../../src/assets/images/school_car_667.webp')]
+            <div
+                class="px-8 py-10 flex flex-col-reverse justify-center gap-6 bg-cover bg-center bg-no-repeat bg-[url('../../src/assets/images/school_car_667.webp')]
                             sm:bg-[url('../../src/assets/images/school_car_768.webp')] lg:bg-[url('../../src/assets/images/school_car_1024.webp')]
                             sm:rounded-xl lg:rounded-2xl overflow-hidden min-h-105 sm:h-172 sm:pl-16 lg:w-5/8 shrink-0">
                 <div data-i18n="home.specialization"
                     class="bg-orange text-white text-sm font-bold uppercase px-2 py-1 rounded w-fit sm:text-lg">
                     Automatic Specialization
                 </div>
-                <h1 data-i18n="home.title" class="sm:max-w-3/4 text-white text-4xl font-black leading-[1.1] sm:text-5xl">
+                <h1 data-i18n="home.title"
+                    class="sm:max-w-3/4 text-white text-4xl font-black leading-[1.1] sm:text-5xl">
                     Master the Road with Moen
                 </h1>
             </div>
@@ -84,7 +86,7 @@
                     <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 lg:rounded-2xl">
                         <div class="text-cayan bg-cayan/10 w-10 h-10 rounded-lg flex items-center justify-center">
-                            <span class="material-symbols-outlined">schedule</span>
+                            <span class="material-symbols-outlined">calendar_clock</span>
                         </div>
                         <div class="flex flex-col gap-1">
                             <h3 data-i18n="home.time" class="text-dark-grey text-base font-bold leading-tight">Flexible
@@ -115,9 +117,29 @@
             </div>
         </div>
 
-        <section id="lessons" class="mt-12">
-            <h2 class="text-center text-2xl font-bold text-cayan">Lesson Packages</h2>
-            <!-- <img src="src/assets/images/school_car_1024.webp" alt=""> -->
+        <section id="lessons" class="mt-12 px-4">
+            <div class="pt-4">
+                <h2 data-i18n="package.title"
+                    class="text-dark-grey text-2xl font-bold leading-tight tracking-tight sm:text-3xl">Why
+                    Choose Your Path
+                </h2>
+                <p data-i18n="lesson.description" class="text-wrap text-dark-blue text-sm mt-1 sm:text-lg">Tailored
+                    bundels for every experience level.</p>
+            </div>
+            <div class="grid grid-cols-1 py-4 sm:grid-cols-2 gap-3 lg:grid-cols-3">
+                <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                                shadow-md lg:rounded-2xl">
+                    <div class="flex justify-between">
+                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">Beginner</h4>
+                        <span class="px-1 py-0.5 text-xs text-grey rounded bg-grey-100 font-bold">Starter</span>
+                    </div>
+                    <p class="font-bold text-dark-grey text-2xl">€550</p>
+                    <ul class="gap-2">
+                        <li class="pl-1"><span class="material-symbols-outlined">schedule</span>10 driving hoours</li>
+                        <li class="pl-1"><span class="material-symbols-outlined">payments</span>Payable in 2 installments</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
         <section id="contacts" class="mt-12">
