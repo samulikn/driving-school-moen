@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
@@ -55,7 +54,6 @@
     --color-orange: #FF8A5B;
     --color-dark-blue: #5e878d;
     --color-grey: #6a7282;
-    --color-grey-100: #f3f4f6;
   }
 }
 @layer base {
@@ -628,9 +626,31 @@
       }
     }
   }
+  .hover\:border-dark-blue {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-dark-blue);
+      }
+    }
+  }
+  .hover\:border-dark-blue\/50 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: color-mix(in srgb, #5e878d 50%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          border-color: color-mix(in oklab, var(--color-dark-blue) 50%, transparent);
+        }
+      }
+    }
+  }
   .sm\:h-172 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 172);
+    }
+  }
+  .sm\:h-198 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 198);
     }
   }
   .sm\:max-w-3\/4 {
@@ -716,6 +736,16 @@
       flex-direction: row-reverse;
     }
   }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
+    }
+  }
   .lg\:rounded-2xl {
     @media (width >= 64rem) {
       border-radius: var(--radius-2xl);
@@ -729,6 +759,11 @@
   .lg\:px-12 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:pt-0 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 0);
     }
   }
   .\[\&_li\]\:flex {

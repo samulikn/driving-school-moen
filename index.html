@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="min-h-screen sm:scroll-smooth" lang="nl">
+<html class="min-h-screen sm:scroll-smooth" lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -32,11 +32,11 @@
     </header>
 
     <main class="mx-auto flex flex-col sm:p-12">
-        <section id="home" class="flex flex-col gap-6 lg:flex-row-reverse">
+        <section id="home" class="flex flex-col gap-6 lg:flex-row-reverse lg:items-center">
             <div
                 class="px-8 py-10 flex flex-col-reverse justify-center gap-6 bg-cover bg-center bg-no-repeat bg-[url('../../src/assets/images/school_car_667.webp')]
                             sm:bg-[url('../../src/assets/images/school_car_768.webp')] lg:bg-[url('../../src/assets/images/school_car_1024.webp')]
-                            sm:rounded-xl lg:rounded-2xl overflow-hidden min-h-105 sm:h-172 sm:pl-16 lg:w-5/8 shrink-0">
+                            sm:rounded-xl lg:rounded-2xl overflow-hidden min-h-105 sm:h-198 sm:pl-16 lg:w-5/8 shrink-0">
                 <div data-i18n="home.specialization"
                     class="bg-orange text-white text-sm font-bold uppercase px-2 py-1 rounded w-fit sm:text-lg">
                     Automatic Specialization
@@ -48,12 +48,12 @@
             </div>
 
             <div class="px-4 flex flex-col">
-                <div class="pt-4">
+                <div class="pt-4 lg:pt-0">
                     <h2 data-i18n="home.why"
                         class="text-dark-grey text-2xl font-bold leading-tight tracking-tight sm:text-3xl">Why
                         Choose Us
                     </h2>
-                    <p data-i18n="home.whom" class="text-wrap text-dark-blue text-sm mt-1 sm:text-lg">Tailored learning
+                    <p data-i18n="home.where" class="text-wrap text-dark-blue text-sm mt-1 sm:text-lg">Tailored learning
                         for the
                         modern driver.</p>
                 </div>
@@ -68,6 +68,19 @@
                             </h3>
                             <p data-i18n="home.car_gear" class="text-dark-blue text-xs leading-normal">Focus on the
                                 road, not the gear stick.</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                                lg:rounded-2xl">
+                        <div class="text-cayan bg-cayan/10 w-10 h-10 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined">road</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h3 data-i18n="home.route" class="text-dark-grey text-base font-bold leading-tight">Haarlem exam routes
+                            </h3>
+                            <p data-i18n="home.route_exam" class="text-dark-blue text-xs leading-normal">We are familiar
+                                with all CBR exam routes in Haarlem and practise them regularly during driving lessons.
+                            </p>
                         </div>
                     </article>
                     <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
@@ -96,10 +109,10 @@
                         </div>
                     </article>
                 </div>
-                <div
-                    class="hidden p-4 text-lg text-center font-semibold border rounded-2xl border-light-grey hover:border-cayan/50 cursor-pointer text-light-grey bg-cayan lg:block">
-                    <a href="#lessons" class=""></a>View packages
-                </div>
+                <a href="#lessons"
+                    class="hidden p-4 text-lg text-center font-semibold border rounded-2xl border-light-grey hover:border-dark-blue cursor-pointer text-light-grey bg-cayan lg:block">
+                    View packages
+                </a>
             </div>
         </section>
 
@@ -119,22 +132,22 @@
 
         <section id="lessons" class="mt-12 px-4">
             <div class="pt-4">
-                <h2 data-i18n="package.title"
+                <h2 data-i18n="lessons.section.title"
                     class="text-dark-grey text-2xl font-bold leading-tight tracking-tight sm:text-3xl">Why
                     Choose Your Path
                 </h2>
-                <p data-i18n="lesson.description" class="text-wrap text-dark-blue text-sm mt-1 sm:text-lg">Tailored
+                <p data-i18n="lessons.section.subtitle" class="text-wrap text-dark-blue text-sm mt-1 sm:text-lg">Tailored
                     bundels for every experience level.</p>
             </div>
             <div class="grid grid-cols-1 py-4 sm:grid-cols-2 gap-4 lg:grid-cols-3">
                 <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
-                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">Introductory Lesson</h4>
+                        <h4 data-i18n="lessons.introLesson.title" class="text-sm font-bold tracking-wider uppercase text-cayan">Introductory Lesson</h4>
                         <!-- <span class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €50</span> -->
                     </div>
                     <div>
-                        <p class="font-bold text-dark-grey text-2xl">€35<span
+                        <p data-i18n="lessons.introLesson.price" class="font-bold text-dark-grey text-2xl">€35<span
                                 class="pl-1 uppercase text-xs text-grey">/60min</span></p>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base [&_span]:flex [&_span]:justify-center [&_span]:items-center
@@ -166,6 +179,27 @@
                             Possibility to extend the lesson
                         </li>
                         <li><span class="material-symbols-outlined">house</span>Door-to-door pickup</li>
+                    </ul>
+                </article>
+                 <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                                shadow-md lg:rounded-2xl">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">5-Lesson Bundle</h4>
+                        <span class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €25</span>
+                    </div>
+                    <div>
+                        <p class="font-bold text-dark-grey text-2xl">€275<span
+                                class="pl-1 uppercase text-xs text-grey">package</span></p>
+                    </div>
+                    <ul class="space-y-2 flex flex-col [&_li]:text-base [&_span]:flex [&_span]:justify-center [&_span]:items-center
+                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:px-1 [&_span]:mr-2
+                            [&_li]:flex [&_li]:text-dark-grey">
+                        <li>
+                            <span class="material-symbols-outlined">schedule</span>
+                            5 driving hours
+                        </li>
+                        <li><span class="material-symbols-outlined">payments</span>Payable in 1 installment</li>
+                        <li><span class="material-symbols-outlined">person_check</span>From age 16,5</li>
                     </ul>
                 </article>
                 <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
@@ -211,7 +245,7 @@
                         <li><span class="material-symbols-outlined">person_check</span>From age 16,5</li>
                     </ul>
                 </article>
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                <!-- <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">35-Lesson Bundle</h4>
@@ -232,7 +266,7 @@
                         <li><span class="material-symbols-outlined">payments</span>Payable in 3 installments</li>
                         <li><span class="material-symbols-outlined">person_check</span>From age 16,5</li>
                     </ul>
-                </article>
+                </article> -->
                 <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
@@ -255,7 +289,7 @@
                         <li><span class="material-symbols-outlined">person_check</span>From age 16,5</li>
                     </ul>
                 </article>
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                <!-- <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">45-Lesson Bundle</h4>
@@ -273,13 +307,14 @@
                             45 driving hours
                         </li>
                         <li><span class="material-symbols-outlined">assignment</span>Including 1 practical exam</li>
-                        <li><span class="material-symbols-outlined">assignment_add</span>Including 1 test exam (if possible)
+                        <li><span class="material-symbols-outlined">assignment_add</span>Including 1 test exam (if
+                            possible)
                         </li>
                         <li><span class="material-symbols-outlined">payments</span>Payable in 4 installments</li>
                         <li><span class="material-symbols-outlined">person_check</span>From age 16,5</li>
                     </ul>
-                </article>
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                </article> -->
+                <!-- <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">50-Lesson Bundle</h4>
@@ -297,20 +332,21 @@
                             50 driving hours
                         </li>
                         <li><span class="material-symbols-outlined">assignment</span>Including 1 practical exam</li>
-                        <li><span class="material-symbols-outlined">assignment_add</span>Including 1 test exam (if possible)
+                        <li><span class="material-symbols-outlined">assignment_add</span>Including 1 test exam (if
+                            possible)
                         </li>
                         <li><span class="material-symbols-outlined">payments</span>Payable in 5 installments</li>
                         <li><span class="material-symbols-outlined">person_check</span>From age 16,5</li>
                     </ul>
-                </article>
+                </article> -->
                 <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
-                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">CBR practical exam - B</h4>
+                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">CBR practical exam - B, BH</h4>
                         <!-- <span class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €50</span> -->
                     </div>
                     <div>
-                        <p class="font-bold text-dark-grey text-2xl">€235</p>
+                        <p class="font-bold text-dark-grey text-2xl">€265</p>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base [&_span]:flex [&_span]:justify-center [&_span]:items-center
                             [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:px-1 [&_span]:mr-2
@@ -326,11 +362,34 @@
                 <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
-                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">CBR fear-of-failure exam - B</h4>
+                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">CBR Mock practice exam
+                        </h4>
+                        <span class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">If possible</span>
+                    </div>
+                    <div>
+                        <p class="font-bold text-dark-grey text-2xl">€200</p>
+                    </div>
+                    <ul class="space-y-2 flex flex-col [&_li]:text-base [&_span]:flex [&_span]:justify-center [&_span]:items-center
+                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:px-1 [&_span]:mr-2
+                            [&_li]:flex [&_li]:text-dark-grey">
+                        <li>
+                            <span class="material-symbols-outlined">directions_car</span>
+                            Vehicle use
+                        </li>
+                        <!-- <li><span class="material-symbols-outlined">road</span>30 min practice drive before</li> -->
+                        <li><span class="material-symbols-outlined">assignment</span>Including 1 mock exam
+                        </li>
+                    </ul>
+                </article>
+                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                                shadow-md lg:rounded-2xl">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">CBR fear-of-failure exam - B
+                        </h4>
                         <!-- <span class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €50</span> -->
                     </div>
                     <div>
-                        <p class="font-bold text-dark-grey text-2xl">€285</p>
+                        <p class="font-bold text-dark-grey text-2xl">€315</p>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base [&_span]:flex [&_span]:justify-center [&_span]:items-center
                             [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:px-1 [&_span]:mr-2
@@ -340,7 +399,30 @@
                             Vehicle use
                         </li>
                         <li><span class="material-symbols-outlined">road</span>30 min practice drive before</li>
-                        <li><span class="material-symbols-outlined">assignment</span>Including 1 fear-of-failure exam</li>
+                        <li><span class="material-symbols-outlined">assignment</span>Including 1 fear-of-failure exam
+                        </li>
+                    </ul>
+                </article>
+                 <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                                shadow-md lg:rounded-2xl">
+                    <div class="flex justify-between items-center">
+                        <h4 class="text-sm font-bold tracking-wider uppercase text-cayan">CBR Bnor exam - B
+                        </h4>
+                        <!-- <span class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €50</span> -->
+                    </div>
+                    <div>
+                        <p class="font-bold text-dark-grey text-2xl">€280</p>
+                    </div>
+                    <ul class="space-y-2 flex flex-col [&_li]:text-base [&_span]:flex [&_span]:justify-center [&_span]:items-center
+                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:px-1 [&_span]:mr-2
+                            [&_li]:flex [&_li]:text-dark-grey">
+                        <li>
+                            <span class="material-symbols-outlined">directions_car</span>
+                            Vehicle use
+                        </li>
+                        <li><span class="material-symbols-outlined">road</span>30 min practice drive before</li>
+                        <li><span class="material-symbols-outlined">assignment</span>Including 1 practical exam
+                        </li>
                     </ul>
                 </article>
                 <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
@@ -363,6 +445,18 @@
                     </ul>
                 </article>
             </div>
+
+            <div class="mt-4 pb-4 lg:mt-8">
+            <div
+                class="flex flex-col gap-4 rounded-xl border-l-4 border-l-orange border border-light-grey bg-white p-5 shadow-sm">
+                <div class="flex flex-col gap-1">
+                    <p data-i18n="" class="text-dark-grey text-lg font-bold leading-tight">Cancellation policies</p>
+                    <p data-i18n="" class="text-dark-blue text-sm font-normal leading-relaxed">
+                        Lessons should be cancelled 24 hours!
+                    </p>
+                </div>
+            </div>
+        </div>
         </section>
 
         <section id="contacts" class="mt-12">
