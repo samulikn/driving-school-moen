@@ -4,14 +4,134 @@
     "title": "Haal je rijbewijs met vertrouwen bij Moen",
     "description": "Professionele, stressvrije automaat rijlessen in Nederlands en Engels. Persoonlijke begeleiding, hoog slagingspercentage en een snelle route naar jouw rijbewijs.",
     "why": "Waarom kiezen voor Rijschool Moen",
-    "whom": "Moderne, persoonlijke rijlessen die passen bij jouw leven.",
+    "where": "Automaat rijlessen in Hoofddorp, Haarlem, Heemstede, Nieuw-Vennep en regio.",
     "car": "Gespecialiseerd in automaat rijlessen",
     "car_gear": "Rijd ontspannen en veilig zonder te schakelen. Ideaal voor beginners, faalangst of wie snel resultaat wil.",
+    "route": "Haarlem examroutes",
+    "route_exam": "Wij zijn bekend met alle CBR-examroutes in Haarlem en oefenen deze regelmatig tijdens de rijlessen.",
     "lang": "Tweetalige rijlessen (Nederlands & Engels)",
     "lang_spec": "Volg rijlessen in de taal waarin jij je het meest comfortabel voelt.",
     "time": "Flexibele lestijden",
     "time_agenda": "Rijlessen die aansluiten op jouw agenda – ook ’s avonds of in het weekend mogelijk.",
     "props": "Automaat is de toekomst",
     "props_text": "90% van de elektrische en moderne hybride auto’s rijdt automatisch. Begin jouw rijopleiding met de technologie van morgen."
+  },
+
+  "lessons": {
+    "section": {
+      "title": "Waarom kiezen voor jouw pad",
+      "subtitle": "Aangepaste pakketten voor elk ervaringsniveau."
+    },
+
+    "badges": {
+      "save": "Bespaar €{{amount}}"
+    },
+
+    "units": {
+      "per60min": "/60 min",
+      "package": "pakket",
+      "drivingHours": "{{count}} rijuren",
+      "fromAge": "Vanaf {{age}} jaar"
+    },
+
+    "introLesson": {
+      "title": "Introductieles",
+      "price": "€35",
+      "features": [
+        "Comfortabele automaat",
+        "Persoonlijke vaardigheidsanalyse",
+        "Ophalen en thuisbrengen"
+      ]
+    },
+
+    "oneTimeLesson": {
+      "title": "Eenmalige les",
+      "price": "€60",
+      "features": [
+        "Mogelijkheid om de les te verlengen",
+        "Ophalen en thuisbrengen"
+      ]
+    },
+
+    "bundle10": {
+      "title": "10-les pakket",
+      "price": "€550",
+      "save": "€50",
+      "features": [
+        "10 rijuren",
+        "Betaalbaar in 2 termijnen",
+        "Vanaf 16,5 jaar"
+      ]
+    },
+
+    "bundle30": {
+      "title": "30-les pakket",
+      "price": "€1878",
+      "save": "€157",
+      "features": [
+        "30 rijuren",
+        "Inclusief 1 praktijkexamen",
+        "Betaalbaar in 3 termijnen",
+        "Vanaf 16,5 jaar"
+      ]
+    },
+
+    "bundle35": {
+      "title": "35-les pakket",
+      "price": "€2153",
+      "save": "€182",
+      "features": [
+        "35 rijuren",
+        "Inclusief 1 praktijkexamen",
+        "Betaalbaar in 3 termijnen",
+        "Vanaf 16,5 jaar"
+      ]
+    },
+
+    "bundle40": {
+      "title": "40-les pakket",
+      "price": "€2428",
+      "save": "€207",
+      "features": [
+        "40 rijuren",
+        "Inclusief 1 praktijkexamen",
+        "Betaalbaar in 4 termijnen",
+        "Vanaf 16,5 jaar"
+      ]
+    },
+
+    "bundle45": {
+      "title": "45-les pakket",
+      "price": "€2703",
+      "save": "€432",
+      "features": [
+        "45 rijuren",
+        "Inclusief 1 praktijkexamen",
+        "Inclusief 1 tussentijdse toets (indien mogelijk)",
+        "Betaalbaar in 4 termijnen"
+      ]
+    },
+
+    "bundle50": {
+      "title": "50-les pakket",
+      "price": "€2950",
+      "save": "€485",
+      "features": [
+        "50 rijuren",
+        "Inclusief 1 praktijkexamen",
+        "Inclusief 1 tussentijdse toets (indien mogelijk)",
+        "Betaalbaar in 5 termijnen"
+      ]
+    },
+
+    "exam": {
+      "title": "CBR praktijkexamen - B",
+      "price": "€235",
+      "features": [
+        "Gebruik van voertuig",
+        "30 minuten oefenrit vooraf",
+        "Inclusief 1 praktijkexamen"
+      ]
+    }
   }
 }
