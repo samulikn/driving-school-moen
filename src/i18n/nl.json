@@ -13,125 +13,74 @@
     "lang_spec": "Volg rijlessen in de taal waarin jij je het meest comfortabel voelt.",
     "time": "Flexibele lestijden",
     "time_agenda": "Rijlessen die aansluiten op jouw agenda – ook ’s avonds of in het weekend mogelijk.",
+    "preview_lesson": "Bekijk pakketten",
     "props": "Automaat is de toekomst",
-    "props_text": "90% van de elektrische en moderne hybride auto’s rijdt automatisch. Begin jouw rijopleiding met de technologie van morgen."
+    "props_text": "90% van de elektrische en moderne hybride auto’s rijdt automatisch. Begin jouw rijopleiding met de technologie van morgen.",
+    "attention": "Let op:",
+    "attention_text": "Een automaatrijbewijs geeft uitsluitend recht op het besturen van voertuigen met een automatische transmissie.",
+    "attention_additions": "Dit is te herkennen aan code 78 op het rijbewijs."
   },
-
-  "lessons": {
-    "section": {
-      "title": "Waarom kiezen voor jouw pad",
-      "subtitle": "Aangepaste pakketten voor elk ervaringsniveau."
+  "lesson": {
+    "title": "Kies jouw rijopleiding",
+    "subtitle": "Kies het lespakket dat aansluit bij jouw doelen.",
+    "cancelpolicy": "Annuleren & verplaatsen",
+    "cancelpolicy_text": "Rijlessen kun je kosteloos annuleren of verplaatsen tot 24 uur vóór de geplande starttijd. Annuleer je een rijles binnen 24 uur voor aanvang, of kom je zonder bericht niet opdagen, dan zijn wij helaas genoodzaakt het volledige lesbedrag in rekening te brengen.",
+    "intro": {
+      "title": "Proefles",
+      "bundle": "/60min",
+      "facility": "Rijles in een moderne automaatauto",
+      "assesment": "Persoonlijke intake en rijvaardigheidsinschatting",
+      "pickup": "Ophalen en afzetten op locatie"
     },
-
-    "badges": {
-      "save": "Bespaar €{{amount}}"
+    "one_lesson": {
+      "title": "Losse rijles",
+      "bundle": "/60min",
+      "hour": "Mogelijkheid om de rijles te verlengen",
+      "pickup": "Ophalen en afzetten op locatie"
     },
-
-    "units": {
-      "per60min": "/60 min",
-      "package": "pakket",
-      "drivingHours": "{{count}} rijuren",
-      "fromAge": "Vanaf {{age}} jaar"
+    "five_lesson": {
+      "title": "5-rijlessenpakket",
+      "bundle": "pakket",
+      "hour": "5 rijlessen van 60 minuten",
+      "payment": "Betaling in één keer",
+      "age": "Starten vanaf 16,5 jaar",
+      "discount": "Bespaar {amount}"
     },
-
-    "introLesson": {
-      "title": "Introductieles",
-      "price": "€35",
-      "features": [
-        "Comfortabele automaat",
-        "Persoonlijke vaardigheidsanalyse",
-        "Ophalen en thuisbrengen"
-      ]
+    "thirty_lesson": {
+      "title": "30-rijlessenpakket",
+      "bundle": "pakket",
+      "hour": "30 rijlessen van 60 minuten",
+      "pracExam": "Inclusief 1 CBR praktijkexamen",
+      "payment": "Betaling in 3 keer",
+      "age": "Starten vanaf 16,5 jaar",
+      "discount": "Bespaar {amount}"
     },
-
-    "oneTimeLesson": {
-      "title": "Eenmalige les",
-      "price": "€60",
-      "features": [
-        "Mogelijkheid om de les te verlengen",
-        "Ophalen en thuisbrengen"
-      ]
+    "forty_lesson": {
+      "title": "40-rijlessenpakket",
+      "bundle": "pakket",
+      "hour": "40 rijlessen van 60 minuten",
+      "pracExam": "Inclusief 1 CBR praktijkexamen",
+      "payment": "Betaling in 4 keer",
+      "age": "Starten vanaf 16,5 jaar",
+      "discount": "Bespaar {amount}"
     },
-
-    "bundle10": {
-      "title": "10-les pakket",
-      "price": "€550",
-      "save": "€50",
-      "features": [
-        "10 rijuren",
-        "Betaalbaar in 2 termijnen",
-        "Vanaf 16,5 jaar"
-      ]
-    },
-
-    "bundle30": {
-      "title": "30-les pakket",
-      "price": "€1878",
-      "save": "€157",
-      "features": [
-        "30 rijuren",
-        "Inclusief 1 praktijkexamen",
-        "Betaalbaar in 3 termijnen",
-        "Vanaf 16,5 jaar"
-      ]
-    },
-
-    "bundle35": {
-      "title": "35-les pakket",
-      "price": "€2153",
-      "save": "€182",
-      "features": [
-        "35 rijuren",
-        "Inclusief 1 praktijkexamen",
-        "Betaalbaar in 3 termijnen",
-        "Vanaf 16,5 jaar"
-      ]
-    },
-
-    "bundle40": {
-      "title": "40-les pakket",
-      "price": "€2428",
-      "save": "€207",
-      "features": [
-        "40 rijuren",
-        "Inclusief 1 praktijkexamen",
-        "Betaalbaar in 4 termijnen",
-        "Vanaf 16,5 jaar"
-      ]
-    },
-
-    "bundle45": {
-      "title": "45-les pakket",
-      "price": "€2703",
-      "save": "€432",
-      "features": [
-        "45 rijuren",
-        "Inclusief 1 praktijkexamen",
-        "Inclusief 1 tussentijdse toets (indien mogelijk)",
-        "Betaalbaar in 4 termijnen"
-      ]
-    },
-
-    "bundle50": {
-      "title": "50-les pakket",
-      "price": "€2950",
-      "save": "€485",
-      "features": [
-        "50 rijuren",
-        "Inclusief 1 praktijkexamen",
-        "Inclusief 1 tussentijdse toets (indien mogelijk)",
-        "Betaalbaar in 5 termijnen"
-      ]
-    },
-
-    "exam": {
-      "title": "CBR praktijkexamen - B",
-      "price": "€235",
-      "features": [
-        "Gebruik van voertuig",
-        "30 minuten oefenrit vooraf",
-        "Inclusief 1 praktijkexamen"
-      ]
+    "fortyFive_lesson": {
+      "title": "45-rijlessenpakket",
+      "bundle": "pakket",
+      "hour": "45 rijlessen van 60 minuten",
+      "pracExam": "Inclusief 1 CBR praktijkexamen",
+      "ttExam": "Inclusief 1 tussentijdse toets (TT)",
+      "payment": "Betaling in 5 keer",
+      "age": "Starten vanaf 16,5 jaar",
+      "discount": "Bespaar {amount}"
     }
+  },
+  "exam": {
+    "practical": "CBR Praktijkexamen B, BH",
+    "tt": "CBR Tussentijdse Toets (TT)",
+    "faalangst": "CBR Faalangstexamen",
+    "bnor": "CBR BNOR praktijkexamen",
+    "theory": "Theorie"
   }
+
 }
