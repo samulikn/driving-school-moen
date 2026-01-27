@@ -237,9 +237,6 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
-  .ml-2 {
-    margin-left: calc(var(--spacing) * 2);
-  }
   .ml-auto {
     margin-left: auto;
   }
@@ -251,6 +248,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
   }
   .h-7 {
     height: calc(var(--spacing) * 7);
@@ -313,6 +313,9 @@
   .items-center {
     align-items: center;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-around {
     justify-content: space-around;
   }
@@ -324,6 +327,9 @@
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -509,10 +515,6 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
@@ -651,21 +653,6 @@
       }
     }
   }
-  .hover\:border-dark-blue\/50 {
-    &:hover {
-      @media (hover: hover) {
-        border-color: color-mix(in srgb, #5e878d 50%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          border-color: color-mix(in oklab, var(--color-dark-blue) 50%, transparent);
-        }
-      }
-    }
-  }
-  .sm\:h-172 {
-    @media (width >= 40rem) {
-      height: calc(var(--spacing) * 172);
-    }
-  }
   .sm\:h-198 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 198);
@@ -679,6 +666,11 @@
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
     }
   }
   .sm\:scroll-smooth {
@@ -718,10 +710,28 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .sm\:text-base {
+    @media (width >= 40rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
   .sm\:text-lg {
     @media (width >= 40rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .sm\:text-sm {
+    @media (width >= 40rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .lg\:mt-8 {
@@ -749,6 +759,11 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:flex-row-reverse {
     @media (width >= 64rem) {
       flex-direction: row-reverse;
@@ -757,11 +772,6 @@
   .lg\:items-center {
     @media (width >= 64rem) {
       align-items: center;
-    }
-  }
-  .lg\:justify-center {
-    @media (width >= 64rem) {
-      justify-content: center;
     }
   }
   .lg\:rounded-2xl {
@@ -794,11 +804,6 @@
       align-items: center;
     }
   }
-  .\[\&_article\]\:justify-between {
-    & article {
-      justify-content: space-between;
-    }
-  }
   .\[\&_article\]\:gap-2 {
     & article {
       gap: calc(var(--spacing) * 2);
@@ -815,9 +820,20 @@
       border-width: 1px;
     }
   }
+  .\[\&_article\]\:border-l-4 {
+    & article {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 4px;
+    }
+  }
   .\[\&_article\]\:border-light-grey {
     & article {
       border-color: var(--color-light-grey);
+    }
+  }
+  .\[\&_article\]\:border-l-orange {
+    & article {
+      border-left-color: var(--color-orange);
     }
   }
   .\[\&_article\]\:bg-white {
@@ -830,9 +846,20 @@
       padding: calc(var(--spacing) * 4);
     }
   }
+  .\[\&_article\]\:p-5 {
+    & article {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
   .\[\&_article\]\:shadow-md {
     & article {
       --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .\[\&_article\]\:shadow-sm {
+    & article {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
@@ -862,9 +889,29 @@
       }
     }
   }
+  .\[\&_li\]\:mb-0 {
+    & li {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .\[\&_li\]\:mb-0\.5 {
+    & li {
+      margin-bottom: calc(var(--spacing) * 0.5);
+    }
+  }
+  .\[\&_li\]\:mb-1 {
+    & li {
+      margin-bottom: calc(var(--spacing) * 1);
+    }
+  }
   .\[\&_li\]\:flex {
     & li {
       display: flex;
+    }
+  }
+  .\[\&_li\]\:items-center {
+    & li {
+      align-items: center;
     }
   }
   .\[\&_li\]\:text-base {
@@ -878,6 +925,27 @@
       color: var(--color-dark-grey);
     }
   }
+  .sm\:\[\&_li\]\:text-lg {
+    @media (width >= 40rem) {
+      & li {
+        font-size: var(--text-lg);
+        line-height: var(--tw-leading, var(--text-lg--line-height));
+      }
+    }
+  }
+  .xl\:\[\&_li\]\:text-xl {
+    @media (width >= 80rem) {
+      & li {
+        font-size: var(--text-xl);
+        line-height: var(--tw-leading, var(--text-xl--line-height));
+      }
+    }
+  }
+  .\[\&_span\]\:mr-1 {
+    & span {
+      margin-right: calc(var(--spacing) * 1);
+    }
+  }
   .\[\&_span\]\:mr-2 {
     & span {
       margin-right: calc(var(--spacing) * 2);
@@ -886,6 +954,11 @@
   .\[\&_span\]\:flex {
     & span {
       display: flex;
+    }
+  }
+  .\[\&_span\]\:flex-col {
+    & span {
+      flex-direction: column;
     }
   }
   .\[\&_span\]\:items-center {
@@ -911,9 +984,19 @@
       }
     }
   }
+  .\[\&_span\]\:p-1 {
+    & span {
+      padding: calc(var(--spacing) * 1);
+    }
+  }
   .\[\&_span\]\:px-1 {
     & span {
       padding-inline: calc(var(--spacing) * 1);
+    }
+  }
+  .\[\&_span\]\:text-center {
+    & span {
+      text-align: center;
     }
   }
   .\[\&_span\]\:text-cayan {

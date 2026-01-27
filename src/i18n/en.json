@@ -13,7 +13,73 @@
     "lang_spec": "Take your driving lessons in the language you feel most comfortable with.",
     "time": "Flexible lesson times",
     "time_agenda": "Driving lessons that fit your schedule – evenings and weekends available.",
+    "preview_lesson": "View packages",
     "props": "Automatic Is the Future",
-    "props_text": "90% of electric and modern hybrid cars are automatic. Start your driving journey with the technology of tomorrow."
+    "props_text": "90% of electric and modern hybrid cars are automatic. Start your driving journey with the technology of tomorrow.",
+    "attention": "Attention:",
+    "attention_text": "If you take your driving test in a vehicle with automatic transmission, you will receive an automatic driving licence.",
+    "attention_additions": "This is indicated by code 78 on the driving licence."
+  },
+  "lesson": {
+    "title": "Choose Your Driving Course",
+    "subtitle": "Choose the lesson package that fits your goals.",
+    "cancelpolicy": "Cancellation policies",
+    "cancelpolicy_text": "You can cancel or reschedule driving lessons free of charge up to 24 hours before the scheduled start time. If a lesson is cancelled within 24 hours of the start time, or if you do not show up without prior notice, we unfortunately have to charge the full lesson fee.",
+   "intro": {
+      "title": "Introductory lesson",
+      "bundle": "/60min",
+      "facility": "Driving lesson in a modern automatic car",
+      "assesment": "Personal intake and driving skill assessment",
+      "pickup": "Pickup and drop-off at your location"
+    },
+    "one_lesson": {
+      "title": "Single Driving Lesson",
+      "bundle": "/60min",
+      "hour": "Option to extend the lesson",
+      "pickup": "Pickup and drop-off at your location"
+    },
+    "five_lesson": {
+      "title": "5-Lesson Package",
+      "bundle": "package",
+      "hour": "5 driving lessons of 60 minutes",
+      "payment": "One-time payment",
+      "age": "Starting from age 16.5",
+      "discount": "Save {amount}"
+    },
+    "thirty_lesson": {
+      "title": "30-Lesson Package",
+      "bundle": "package",
+      "hour": "30 driving lessons of 60 minutes",
+      "pracExam": "Including 1 CBR practical exam",
+      "payment": "Payable in 3 instalments",
+      "age": "Starting from age 16.5",
+      "discount": "Save {amount}"
+    },
+    "forty_lesson": {
+      "title": "40-Lesson Package",
+      "bundle": "package",
+      "hour": "40 driving lessons of 60 minutes",
+      "pracExam": "Including 1 CBR practical exam",
+      "payment": "Payable in 4 instalments",
+      "age": "Starting from age 16.5",
+      "discount": "Save {amount}"
+    },
+     "fortyFive_lesson": {
+      "title": "45-Lesson Package",
+      "bundle": "package",
+      "hour": "45 driving lessons of 60 minutes",
+      "pracExam": "Including 1 CBR practical exam",
+      "ttExam": "Including 1 mock practical exam (TT)",
+      "payment": "Payable in 5 instalments",
+      "age": "Starting from age 16.5",
+      "discount": "Save {amount}"
+    }
+  },
+  "exam": {
+    "practical": "CBR Practical Exam B, BH",
+    "tt": "CBR Mock Practical Exam (TT)",
+    "faalangst": "CBR Fear-of-Failure Exam",
+    "bnor": "CBR BNOR praktijkexamen",
+    "theory": "Theory"
   }
 }
