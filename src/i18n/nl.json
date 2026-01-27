@@ -69,17 +69,19 @@
       "bundle": "pakket",
       "hour": "45 rijlessen van 60 minuten",
       "pracExam": "Inclusief 1 CBR praktijkexamen",
-      "ttExam": "Inclusief 1 tussentijdse toets (TT)",
+      "ttExam": "Inclusief 1 tussentijdse toets",
       "payment": "Betaling in 5 keer",
       "age": "Starten vanaf 16,5 jaar",
       "discount": "Bespaar {amount}"
     }
   },
   "exam": {
-    "practical": "CBR Praktijkexamen B, BH",
-    "tt": "CBR Tussentijdse Toets (TT)",
-    "faalangst": "CBR Faalangstexamen",
-    "bnor": "CBR BNOR praktijkexamen",
+    "title": "Examenprijzen",
+    "subtitle": "Inclusief 30 minuten rijles voorafgaand aan het examen.",
+    "practical": "Praktijkexamen B, BH",
+    "tt": "Tussentijdse Toets (TT)",
+    "faalangst": "Faalangstexamen",
+    "bnor": "BNOR praktijkexamen",
     "theory": "Theorie"
   }
 

@@ -114,7 +114,7 @@ function updateDiscount() {
     //update discount fields
     const discount5less = CalcDiscount(5, prices.fiveLess);
     const discount30less = CalcDiscount(30, prices.thirtyLess, prices.practicalExam);
-    const discount40less = CalcDiscount(40, prices.thirtyLess, prices.practicalExam);
+    const discount40less = CalcDiscount(40, prices.fortyLess, prices.practicalExam);
     const discount45Less = CalcDiscount(45, prices.fortyFiveLess, prices.practicalExam, prices.ttExam);
 
     document.getElementById("5-lesson-discount")

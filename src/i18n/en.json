@@ -76,10 +76,16 @@
     }
   },
   "exam": {
-    "practical": "CBR Practical Exam B, BH",
-    "tt": "CBR Mock Practical Exam (TT)",
-    "faalangst": "CBR Fear-of-Failure Exam",
-    "bnor": "CBR BNOR praktijkexamen",
+    "title": "Exam prices",
+    "subtitle": "Includes a 30-minute driving session prior to the exam.",
+    "practical": "Practical Exam B, BH",
+    "tt": "Mock Practical Exam (TT)",
+    "faalangst": "Fear-of-Failure Exam",
+    "bnor": "BNOR praktijkexamen",
     "theory": "Theory"
+  },
+  "contact": {
+    "title": "Let's get you on the road",
+    "subtitle": "Specializing in automatic driving lessons in Haarlem and the surrounding region."
   }
 }
