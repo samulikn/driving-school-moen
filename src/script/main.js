@@ -27,7 +27,7 @@ language.addEventListener("click", () => {
 
   currentLang = isNL ? "nl" : "en";
   loadLanguage(currentLang);
-//   updateDiscount();
+  //   updateDiscount();
 });
 
 async function loadLanguage(lang) {
@@ -37,7 +37,6 @@ async function loadLanguage(lang) {
 
     await applyTranslation();
     updateDiscount();
-
   } catch (err) {
     console.log(err);
   }
@@ -60,27 +59,48 @@ async function getPrice() {
 
       updateElement(key, price);
     });
-
   } catch (err) {
     console.error(`Couldn't get prices ${err}`);
   }
 }
 
+async function loadContacts() {
+  try {
+    const response = await fetch("src/data/contact.json");
+    const contacts = await response.json();
+
+    Object.entries(contacts).forEach(([key, value]) => {
+      updateElement(key, value);
+    });
+
+    const phoneLink = `tel:${contacts.tel}`;
+    const watsappLink = `https://wa.me/${contacts.tel.replace("+", "")}`;
+    const mailLink = `mailto:${contacts.email}`;
+
+    updateLink("phoneLink", phoneLink);
+    updateLink("whatsappLink", watsappLink);
+    updateLink("mailLink", mailLink);
+  } catch (err) {
+    console.err(`Couldn't load contacts info ${err}`);
+  }
+}
+
 function updateTranslationText(key, param = {}) {
-    const value = key.split(".").reduce((obj, i) => obj?.[i], translation);
+  const value = key.split(".").reduce((obj, i) => obj?.[i], translation);
 
-    if (!value) return key;
+  if (!value) return key;
 
-    return Object.entries(param).reduce((text, [k, v]) => 
-        text.replace(`{${k}}`,v)
-    , value);
+  return Object.entries(param).reduce(
+    (text, [k, v]) => text.replace(`{${k}}`, v),
+    value,
+  );
 }
 
 function applyTranslation() {
-    document.querySelectorAll("[data-i18n]").forEach((el) => {
-        const key = el.dataset.i18n;
-        el.textContent = updateTranslationText(key);
-      });
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.dataset.i18n;
+    el.textContent = updateTranslationText(key);
+  });
 }
 
 function updateElement(elementId, text) {
@@ -91,6 +111,15 @@ function updateElement(elementId, text) {
   }
   element.textContent = "";
   element.append(text);
+}
+
+function updateLink(elementId, text) {
+  const link = document.getElementById(elementId);
+  if (!link) {
+    // console.log(`Link with id ${elementId} not found.`);
+    return;
+  }
+  link.href = text;
 }
 
 const CalcDiscount = (
@@ -111,26 +140,48 @@ const CalcDiscount = (
 };
 
 function updateDiscount() {
-    //update discount fields
-    const discount5less = CalcDiscount(5, prices.fiveLess);
-    const discount30less = CalcDiscount(30, prices.thirtyLess, prices.practicalExam);
-    const discount40less = CalcDiscount(40, prices.fortyLess, prices.practicalExam);
-    const discount45Less = CalcDiscount(45, prices.fortyFiveLess, prices.practicalExam, prices.ttExam);
+  //update discount fields
+  const discount5less = CalcDiscount(5, prices.fiveLess);
+  const discount30less = CalcDiscount(
+    30,
+    prices.thirtyLess,
+    prices.practicalExam,
+  );
+  const discount40less = CalcDiscount(
+    40,
+    prices.fortyLess,
+    prices.practicalExam,
+  );
+  const discount45Less = CalcDiscount(
+    45,
+    prices.fortyFiveLess,
+    prices.practicalExam,
+    prices.ttExam,
+  );
 
-    document.getElementById("5-lesson-discount")
-    .textContent = updateTranslationText("lesson.five_lesson.discount", { amount: discount5less });
-    document.getElementById("30-lesson-discount")
-    .textContent = updateTranslationText("lesson.thirty_lesson.discount", { amount: discount30less });
-    document.getElementById("40-lesson-discount")
-    .textContent = updateTranslationText("lesson.forty_lesson.discount", { amount: discount40less });
-    document.getElementById("45-lesson-discount")
-    .textContent = updateTranslationText("lesson.fortyFive_lesson.discount", { amount: discount45Less });
-}  
+  document.getElementById("5-lesson-discount").textContent =
+    updateTranslationText("lesson.five_lesson.discount", {
+      amount: discount5less,
+    });
+  document.getElementById("30-lesson-discount").textContent =
+    updateTranslationText("lesson.thirty_lesson.discount", {
+      amount: discount30less,
+    });
+  document.getElementById("40-lesson-discount").textContent =
+    updateTranslationText("lesson.forty_lesson.discount", {
+      amount: discount40less,
+    });
+  document.getElementById("45-lesson-discount").textContent =
+    updateTranslationText("lesson.fortyFive_lesson.discount", {
+      amount: discount45Less,
+    });
+}
 
-async function init () {
-    await loadLanguage(currentLang);
-    await getPrice();
-    updateDiscount();
+async function init() {
+  await loadLanguage(currentLang);
+  await getPrice();
+  updateDiscount();
+  loadContacts();
 }
 
 init();

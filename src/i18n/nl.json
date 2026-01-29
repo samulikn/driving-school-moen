@@ -118,9 +118,9 @@
     },
     "details": {
       "title": "Rijschoolgegevens",
-      "address": "Adres: {address}",
-      "kvknum": "KvK-nummer: {kvknum}",
-      "schoolnum": "CBR-rijschoolnummer: {schoolnum}"
+      "address": "Adres: ",
+      "kvknum": "KvK-nummer: ",
+      "schoolnum": "CBR-rijschoolnummer: "
     }
   }
 }
