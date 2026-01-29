@@ -86,7 +86,41 @@
   },
   "contact": {
     "title": "Samen brengen we je op weg",
-    "subtitle": "Gespecialiseerd in automaat rijlessen in Haarlem en omgeving."
+    "subtitle": "Gespecialiseerd in automaat rijlessen in Haarlem en omgeving.",
+    "summary": "Automaat rijopleiding",
+    "call": {
+      "title": "Bel ons"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "description": "Stuur ons een bericht"
+    },
+    "mail": {
+      "title": "E-mail"
+    },
+    "schedule": {
+      "title": "Openingstijden",
+      "work_days": "Maandag - Vrijdag:",
+      "work_days_hour": "09:00 – 20:00",
+      "mon": "Maandag:",
+      "tue": "Dinsdag:",
+      "wed": "Woensdag:",
+      "thu": "Donderdag:",
+      "fri": "Vrijdag:",
+      "sat": "Zaterdag:",
+      "sat_hour": "09:00 – 15:00",
+      "sun": "Zondag:",
+      "sun_hour": "Gesloten"
+    },
+    "addinfo": {
+      "title": "Belangrijke CBR-informatie",
+      "description": "Meld je aan voor het theorie-examen, vul de gezondheidsverklaring in en machtig de rijschool via "
+    },
+    "details": {
+      "title": "Rijschoolgegevens",
+      "address": "Adres: {address}",
+      "kvknum": "KvK-nummer: {kvknum}",
+      "schoolnum": "CBR-rijschoolnummer: {schoolnum}"
+    }
   }
-
 }
