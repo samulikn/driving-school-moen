@@ -118,9 +118,9 @@
     },
     "details": {
       "title": "Driving School Details",
-      "address": "Address: {address}",
-      "kvknum": "Chamber of Commerce number: {kvknum}",
-      "schoolnum": "CBR driving school number: {schoolnum}"
+      "address": "Address: ",
+      "kvknum": "Chamber of Commerce number: ",
+      "schoolnum": "CBR driving school number: "
     }
   }
 }
