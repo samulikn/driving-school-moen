@@ -86,6 +86,41 @@
   },
   "contact": {
     "title": "Let's get you on the road",
-    "subtitle": "Specializing in automatic driving lessons in Haarlem and the surrounding region."
+    "subtitle": "Specializing in automatic driving lessons in Haarlem and the surrounding region.",
+    "summary": "Automatic Driving Training",
+    "call": {
+      "title": "Call us"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "description": "Send us a message"
+    },
+    "mail": {
+      "title": "E-mail"
+    },
+    "schedule": {
+      "title": "Opening Hours",
+      "work_days": "Monday - Friday:",
+      "work_days_hour": "09:00 – 20:00",
+      "mon": "Monday:",
+      "tue": "Tuesday:",
+      "wed": "Wednesday:",
+      "thu": "Thursday:",
+      "fri": "Friday:",
+      "sat": "Saturday:",
+      "sat_hour": "09:00 – 15:00",
+      "sun": "Sunday:",
+      "sun_hour": "Closed"
+    },
+    "addinfo": {
+      "title": "Important CBR Information",
+      "description": "Register for the theory exam, complete the health declaration and authorize the driving school via "
+    },
+    "details": {
+      "title": "Driving School Details",
+      "address": "Address: {address}",
+      "kvknum": "Chamber of Commerce number: {kvknum}",
+      "schoolnum": "CBR driving school number: {schoolnum}"
+    }
   }
 }
