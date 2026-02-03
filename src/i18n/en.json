@@ -1,12 +1,17 @@
 {
+  "nav": {
+    "home": "Home",
+    "packages": "Prices",
+    "contact": "Contact"
+  },
   "home": {
     "specialization": "Automatic Specialization",
     "title": "Get your driver’s license with confidence at Moen",
     "description": "Professional, stress-free automatic driving lessons in Dutch and English. Personal guidance, a high pass rate, and a fast track to your driver’s license.",
-    "why": "Why Choose Driving School Moen",
-    "where": "Professional automatic driving lessons in Hoofddorp, Haarlem, Heemstede, Nieuw-Vennep and the surrounding region.",
+    "about_title": "Why Choose Driving School Moen",
+    "region": "Professional automatic driving lessons in Hoofddorp, Haarlem, Heemstede, Nieuw-Vennep and the surrounding region.",
     "car": "Specialized in automatic driving lessons",
-    "car_gear": "Drive calmly and safely without worrying about gear shifting. Ideal for beginners, nervous drivers, or anyone who wants fast results.",
+    "benefit": "Drive calmly and safely without worrying about gear shifting. Ideal for beginners, nervous drivers, or anyone who wants fast results.",
     "route": "Haarlem exam routes",
     "route_exam": "We are familiar with all CBR exam routes in Haarlem and practise them regularly during lessons.",
     "lang": "Bilingual driving lessons (Dutch & English)",

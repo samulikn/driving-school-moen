@@ -1,12 +1,17 @@
 {
+  "nav": {
+    "home": "Home",
+    "packages": "Tarieven",
+    "contact": "Contact"
+  },
   "home": {
     "specialization": "Automaat specialisatie",
     "title": "Haal je rijbewijs met vertrouwen bij Moen",
     "description": "Professionele, stressvrije automaat rijlessen in Nederlands en Engels. Persoonlijke begeleiding, hoog slagingspercentage en een snelle route naar jouw rijbewijs.",
-    "why": "Waarom kiezen voor Rijschool Moen",
-    "where": "Automaat rijlessen in Hoofddorp, Haarlem, Heemstede, Nieuw-Vennep en regio.",
+    "about_title": "Waarom kiezen voor Rijschool Moen",
+    "region": "Automaat rijlessen in Hoofddorp, Haarlem, Heemstede, Nieuw-Vennep en regio.",
     "car": "Gespecialiseerd in automaat rijlessen",
-    "car_gear": "Rijd ontspannen en veilig zonder te schakelen. Ideaal voor beginners, faalangst of wie snel resultaat wil.",
+    "benefit": "Rijd ontspannen en veilig zonder te schakelen. Ideaal voor beginners, faalangst of wie snel resultaat wil.",
     "route": "Haarlem examroutes",
     "route_exam": "Wij zijn bekend met alle CBR-examroutes in Haarlem en oefenen deze regelmatig tijdens de rijlessen.",
     "lang": "Tweetalige rijlessen (Nederlands & Engels)",

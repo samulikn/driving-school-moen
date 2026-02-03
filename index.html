@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="min-h-screen sm:scroll-smooth" lang="en">
+<html class="min-h-screen sm:scroll-smooth" lang="nl">
 
 <head>
     <meta charset="utf-8" />
@@ -16,23 +16,25 @@
     <header class="bg-white/80 backdrop-blur-md border-b border-light-grey">
         <div class="flex items-center p-4 lg:px-12 justify-between w-full mx-auto">
             <div class="flex items-center gap-2">
-                <div class="text-white bg-cayan p-1.5 rounded-lg flex items-center justify-center">
+                <div class="text-white bg-cyan p-1.5 rounded-lg flex items-center justify-center">
                     <span class="material-symbols-outlined">school</span>
                 </div>
-                <h2 class="text-dark-grey text-2xl font-extrabold leading-tight tracking-tight">Moen</h2>
+                <h2 class="text-dark-grey text-2xl font-extrabold leading-tight tracking-tight sm:3xl lg:4xl">Moen</h2>
             </div>
-            <button id="langToggle" aria-label="Toggle language" class="relative flex items-center w-20 h-9 rounded-full bg-light-grey/30
-                        transition-colors duration-300 ease-in-out">
+            <button id="langToggle" aria-label="Toggle language"
+                class="relative flex items-center w-20 h-9 rounded-full bg-light-grey/30
+                        transition-colors duration-300 ease-in-out
+                        [&_span]:font-bold [&_span]:text-center [&_span]:text-sm [&_span]:sm:text-base">
                 <div id="toggleThumb" class="absolute left-1 top-1 w-9 h-7 bg-white rounded-full shadow-md transition-transform duration-300
                         ease-in-out"></div>
-                <span id="langNL" class="pl-1 w-1/2 text-cayan text-xs font-bold text-center z-10">NL</span>
-                <span id="langEN" class="pr-1 w-1/2 text-xs font-bold text-center z-10">EN</span>
+                <span id="langNL" class="pl-1 w-1/2 z-10">NL</span>
+                <span id="langEN" class="pr-1 w-1/2 z-10">EN</span>
             </button>
         </div>
     </header>
 
     <main class="mx-auto flex flex-col sm:px-8 ">
-        <section id="home" class="pt-4 flex flex-col gap-6 lg:flex-row-reverse lg:items-center sm:pt-8">
+        <section id="home" class="pt-4 flex flex-col gap-6 lg:flex-row-reverse sm:pt-8">
             <div
                 class="px-8 py-10 flex flex-col-reverse justify-center gap-6 bg-cover bg-center bg-no-repeat bg-[url('../../src/assets/images/school_car_667.webp')]
                             sm:bg-[url('../../src/assets/images/school_car_768.webp')] lg:bg-[url('../../src/assets/images/school_car_1024.webp')]
@@ -49,31 +51,31 @@
 
             <div class="px-4 flex flex-col">
                 <div class="pt-4 lg:pt-0">
-                    <h2 data-i18n="home.why"
+                    <h2 data-i18n="home.about_title"
                         class="text-dark-grey text-2xl font-bold leading-tight tracking-tight sm:text-3xl">Why
                         Choose Us
                     </h2>
-                    <p data-i18n="home.where" class="text-wrap text-dark-blue text-sm mt-1 sm:text-lg">Tailored learning
+                    <p data-i18n="home.region" class="text-wrap text-dark-blue text-sm mt-1 sm:text-lg">Tailored learning
                         for the modern driver.</p>
                 </div>
                 <div class="grid grid-cols-1 py-4 sm:grid-cols-2 gap-3 lg:grid-cols-1">
-                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 lg:rounded-2xl">
-                        <div class="text-cayan bg-cayan/10 w-10 h-10 rounded-lg flex items-center justify-center">
+                        <div class="text-cyan bg-cyan/10 w-10 h-10 rounded-lg flex items-center justify-center">
                             <span class="material-symbols-outlined">auto_transmission</span>
                         </div>
                         <div class="flex flex-col gap-1">
                             <h3 data-i18n="home.car"
                                 class="text-dark-grey text-base font-bold leading-tight sm:text-lg">Automatic
                             </h3>
-                            <p data-i18n="home.car_gear" class="text-dark-blue text-xs leading-normal sm:text-sm">Focus
+                            <p data-i18n="home.benefit" class="text-dark-blue text-xs leading-normal sm:text-sm">Focus
                                 on the
                                 road, not the gear stick.</p>
                         </div>
                     </article>
-                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 lg:rounded-2xl">
-                        <div class="text-cayan bg-cayan/10 w-10 h-10 rounded-lg flex items-center justify-center">
+                        <div class="text-cyan bg-cyan/10 w-10 h-10 rounded-lg flex items-center justify-center">
                             <span class="material-symbols-outlined">road</span>
                         </div>
                         <div class="flex flex-col gap-1">
@@ -87,9 +89,9 @@
                             </p>
                         </div>
                     </article>
-                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 lg:rounded-2xl">
-                        <div class="text-cayan bg-cayan/10 w-10 h-10 rounded-lg flex items-center justify-center">
+                        <div class="text-cyan bg-cyan/10 w-10 h-10 rounded-lg flex items-center justify-center">
                             <span class="material-symbols-outlined">language</span>
                         </div>
                         <div class="flex flex-col gap-1">
@@ -99,9 +101,9 @@
                             <p data-i18n="home.lang_spec" class="text-dark-blue text-xs leading-normal sm:text-sm"></p>
                         </div>
                     </article>
-                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                    <article class="flex flex-col gap-4 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 lg:rounded-2xl">
-                        <div class="text-cayan bg-cayan/10 w-10 h-10 rounded-lg flex items-center justify-center">
+                        <div class="text-cyan bg-cyan/10 w-10 h-10 rounded-lg flex items-center justify-center">
                             <span class="material-symbols-outlined">calendar_clock</span>
                         </div>
                         <div class="flex flex-col gap-1">
@@ -115,7 +117,7 @@
                     </article>
                 </div>
                 <a href="#lessons" data-i18n="home.preview_lesson"
-                    class="hidden p-4 text-lg text-center font-semibold border rounded-2xl border-light-grey hover:border-dark-blue cursor-pointer text-light-grey bg-cayan lg:block sm:text-xl">
+                    class="hidden p-4 text-lg text-center font-semibold border rounded-2xl border-light-grey hover:border-dark-blue cursor-pointer text-light-grey bg-cyan lg:block sm:text-xl">
                     View packages
                 </a>
             </div>
@@ -160,11 +162,12 @@
                     Choose the package that fits your goal.</p>
             </div>
             <div class="grid grid-cols-1 py-4 sm:grid-cols-2 gap-4 lg:grid-cols-3">
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 data-i18n="lesson.intro.title"
-                            class="text-sm font-bold tracking-wider uppercase text-cayan sm:text-base lg:text-lg">Introductory Lesson</h4>
+                            class="text-sm font-bold tracking-wider uppercase text-cyan sm:text-base lg:text-lg">
+                            Introductory Lesson</h4>
                         <!-- <span class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €50</span> -->
                     </div>
                     <div class="font-bold">
@@ -172,7 +175,7 @@
                         <span data-i18n="lesson.intro.bundle" class="pl-1 uppercase text-xs text-grey">/60min</span>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base sm:[&_li]:text-lg
-                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:p-1 [&_span]:mr-2
+                            [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan [&_span]:p-1 [&_span]:mr-2
                             [&_li]:flex [&_li]:items-center [&_li]:text-dark-grey [&_li]:mb-1">
                         <li>
                             <span class="material-symbols-outlined">directions_car</span>
@@ -188,11 +191,12 @@
                         </li>
                     </ul>
                 </article>
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 data-i18n="lesson.one_lesson.title"
-                            class="text-sm font-bold tracking-wider uppercase text-cayan sm:text-base lg:text-lg">One-time Lesson</h4>
+                            class="text-sm font-bold tracking-wider uppercase text-cyan sm:text-base lg:text-lg">
+                            One-time Lesson</h4>
                         <!-- <span class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €50</span> -->
                     </div>
                     <div class="font-bold">
@@ -201,7 +205,7 @@
                             class="pl-1 uppercase text-xs text-grey">/60min</span>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base sm:[&_li]:text-lg [&_li]:mb-1
-                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:p-1 [&_span]:mr-2
+                            [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan [&_span]:p-1 [&_span]:mr-2
                             [&_li]:flex [&_li]:items-center [&_li]:text-dark-grey">
                         <li>
                             <span class="material-symbols-outlined">schedule</span>
@@ -213,11 +217,12 @@
                         </li>
                     </ul>
                 </article>
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 data-i18n="lesson.five_lesson.title"
-                            class="text-sm font-bold tracking-wider uppercase text-cayan sm:text-base lg:text-lg">5-Lesson Bundle</h4>
+                            class="text-sm font-bold tracking-wider uppercase text-cyan sm:text-base lg:text-lg">
+                            5-Lesson Bundle</h4>
                         <output id="5-lesson-discount" data-i18n="lesson.five_lesson.discount" aria-live="polite"
                             class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €25</output>
                     </div>
@@ -227,7 +232,7 @@
                             class="pl-1 uppercase text-xs text-grey">package</span>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base sm:[&_li]:text-lg [&_li]:mb-1
-                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:p-1 [&_span]:mr-2
+                            [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan [&_span]:p-1 [&_span]:mr-2
                             [&_li]:flex [&_li]:items-center [&_li]:text-dark-grey">
                         <li>
                             <span class="material-symbols-outlined">schedule</span>
@@ -243,11 +248,12 @@
                         </li>
                     </ul>
                 </article>
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 data-i18n="lesson.thirty_lesson.title"
-                            class="text-sm font-bold tracking-wider uppercase text-cayan sm:text-base lg:text-lg">30-Lesson Bundle</h4>
+                            class="text-sm font-bold tracking-wider uppercase text-cyan sm:text-base lg:text-lg">
+                            30-Lesson Bundle</h4>
                         <span id="30-lesson-discount" data-i18n="lesson.thirty_lesson.discount"
                             class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €157</span>
                     </div>
@@ -257,7 +263,7 @@
                             class="pl-1 uppercase text-xs text-grey">package</span>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base sm:[&_li]:text-lg [&_li]:mb-1
-                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:p-1 [&_span]:mr-2
+                            [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan [&_span]:p-1 [&_span]:mr-2
                             [&_li]:flex [&_li]:items-center [&_li]:text-dark-grey">
                         <li>
                             <span class="material-symbols-outlined">schedule</span>
@@ -277,11 +283,12 @@
                         </li>
                     </ul>
                 </article>
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 data-i18n="lesson.forty_lesson.title"
-                            class="text-sm font-bold tracking-wider uppercase text-cayan sm:text-base lg:text-lg">40-Lesson Bundle</h4>
+                            class="text-sm font-bold tracking-wider uppercase text-cyan sm:text-base lg:text-lg">
+                            40-Lesson Bundle</h4>
                         <span id="40-lesson-discount" data-i18n="lesson.forty_lesson.discount"
                             class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €207</span>
                     </div>
@@ -291,7 +298,7 @@
                             class="pl-1 uppercase text-xs text-grey">package</span>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base sm:[&_li]:text-lg [&_li]:mb-1
-                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:p-1 [&_span]:mr-2
+                            [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan [&_span]:p-1 [&_span]:mr-2
                             [&_li]:flex [&_li]:items-center [&_li]:text-dark-grey">
                         <li>
                             <span class="material-symbols-outlined">schedule</span>
@@ -311,11 +318,12 @@
                         </li>
                     </ul>
                 </article>
-                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cayan/50
+                <article class="flex flex-col gap-3 rounded-xl border border-light-grey bg-white p-4 transition-all hover:border-cyan/50
                                 shadow-md lg:rounded-2xl">
                     <div class="flex justify-between items-center">
                         <h4 data-i18n="lesson.fortyFive_lesson.title"
-                            class="text-sm font-bold tracking-wider uppercase text-cayan sm:text-base lg:text-lg">45-Lesson Bundle</h4>
+                            class="text-sm font-bold tracking-wider uppercase text-cyan sm:text-base lg:text-lg">
+                            45-Lesson Bundle</h4>
                         <span id="45-lesson-discount" data-i18n="lesson.fortyFive_lesson.discount"
                             class="px-2 py-1 text-xs text-orange rounded bg-orange/10 font-bold">Save €432</span>
                     </div>
@@ -325,7 +333,7 @@
                             class="pl-1 uppercase text-xs text-grey">package</span>
                     </div>
                     <ul class="space-y-2 flex flex-col [&_li]:text-base sm:[&_li]:text-lg [&_li]:mb-1
-                            [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan [&_span]:p-1 [&_span]:mr-2
+                            [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan [&_span]:p-1 [&_span]:mr-2
                             [&_li]:flex [&_li]:items-center [&_li]:text-dark-grey">
                         <li>
                             <span class="material-symbols-outlined">schedule</span>
@@ -354,40 +362,40 @@
             <p data-i18n="exam.subtitle" class="pb-3 text-wrap text-dark-blue text-sm mt-1 sm:text-lg"></p>
             <div
                 class="grid grid-col-1 p-y-4 sm:grid-cols-2 gap-3 lg:grid-cols-3
-                        [&_article]:flex [&_article]:gap-2 [&_article]:items-center [&_article]:rounded-xl [&_article]:border [&_article]:border-light-grey [&_article]:bg-white [&_article]:p-4 [&_article]:transition-all [&_article]:hover:border-cayan/50 [&_article]:shadow-md [&_article]:lg:rounded-2xl">
+                        [&_article]:flex [&_article]:gap-2 [&_article]:items-center [&_article]:rounded-xl [&_article]:border [&_article]:border-light-grey [&_article]:bg-white [&_article]:p-4 [&_article]:transition-all [&_article]:hover:border-cyan/50 [&_article]:shadow-md [&_article]:lg:rounded-2xl">
                 <article
-                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan">
+                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan">
                     <span class="material-symbols-outlined">assignment</span>
                     <p data-i18n="exam.practical" class="font-bold text-sm sm:text-base lg:text-lg">CBR Practical exam
                         B, BH</p>
-                    <p id="practicalExam" class="ml-auto text-lg font-bold text-cayan"></p>
+                    <p id="practicalExam" class="ml-auto text-lg font-bold text-cyan"></p>
                 </article>
                 <article
-                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan">
+                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan">
                     <span class="material-symbols-outlined">assignment</span>
                     <p data-i18n="exam.tt" class="font-bold text-sm sm:text-base lg:text-lg">CBR Mock Practical exam
                         (TT)</p>
-                    <p id="ttExam" class="ml-auto text-lg font-bold text-cayan"></p>
+                    <p id="ttExam" class="ml-auto text-lg font-bold text-cyan"></p>
                 </article>
                 <article
-                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan">
+                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan">
                     <span class="material-symbols-outlined">assignment</span>
                     <p data-i18n="exam.faalangst" class="font-bold text-sm sm:text-base lg:text-lg">CBR Fear-of-Failure
                         exam</p>
-                    <p id="faalangstExam" class="ml-auto text-lg font-bold text-cayan"></p>
+                    <p id="faalangstExam" class="ml-auto text-lg font-bold text-cyan"></p>
                 </article>
                 <article
-                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan">
+                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan">
                     <span class="material-symbols-outlined">assignment</span>
                     <p data-i18n="exam.bnor" class="font-bold text-sm sm:text-base lg:text-lg">CBR Bnor practical exam
                     </p>
-                    <p id="bnorExam" class="ml-auto text-lg font-bold text-cayan"></p>
+                    <p id="bnorExam" class="ml-auto text-lg font-bold text-cyan"></p>
                 </article>
                 <article
-                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cayan/10 [&_span]:text-cayan">
+                    class="[&_span]:px-1 [&_span]:flex [&_span]:justify-center [&_span]:items-center [&_span]:rounded-lg [&_span]:bg-cyan/10 [&_span]:text-cyan">
                     <span class="material-symbols-outlined">menu_book</span>
                     <p data-i18n="exam.theory" class="font-bold text-sm sm:text-base lg:text-lg">CBR Theory exam</p>
-                    <p id="theoryExam" class="ml-auto text-lg font-bold text-cayan"></p>
+                    <p id="theoryExam" class="ml-auto text-lg font-bold text-cyan"></p>
                 </article>
             </div>
             <div class="mt-6 pb-4 lg:mt-8">
@@ -423,11 +431,12 @@
                         [&_a]:shadow-sm [&_a]:border [&_a]:border-grey-100 [&_a]:active:scale-95 [&_a]:transition-transform
                         ">
                         <a id="phoneLink" href="tel:" class="">
-                            <div class="mr-1 size-12 rounded-full bg-cayan text-white flex justify-center items-center">
+                            <div class="mr-1 size-12 rounded-full bg-cyan text-white flex justify-center items-center">
                                 <span class="material-symbols-outlined">call</span>
                             </div>
                             <div class="flex flex-col">
-                                <p data-i18n="contact.call.title" class="font-bold text-sm sm:text-base lg:text-lg">Call us</p>
+                                <p data-i18n="contact.call.title" class="font-bold text-sm sm:text-base lg:text-lg">Call
+                                    us</p>
                                 <p id="tel" class="text-sm text-dark-blue sm:text-base lg:text-lg"></p>
                             </div>
                         </a>
@@ -436,30 +445,34 @@
                                 <span class="material-symbols-outlined">chat</span>
                             </div>
                             <div class="flex flex-col">
-                                <p data-i18n="contact.whatsapp.title" class="font-bold text-sm sm:text-base lg:text-lg">WhatsApp
+                                <p data-i18n="contact.whatsapp.title" class="font-bold text-sm sm:text-base lg:text-lg">
+                                    WhatsApp
                                 </p>
-                                <p data-i18n="contact.whatsapp.description" class="text-sm text-dark-blue sm:text-base lg:text-lg">
+                                <p data-i18n="contact.whatsapp.description"
+                                    class="text-sm text-dark-blue sm:text-base lg:text-lg">
                                     Chat now</p>
                             </div>
                         </a>
                         <a id="mailLink" href="mailto:">
-                            <div class="mr-1 size-12 rounded-full bg-cayan text-white flex justify-center items-center">
+                            <div class="mr-1 size-12 rounded-full bg-cyan text-white flex justify-center items-center">
                                 <span class="material-symbols-outlined">mail</span>
                             </div>
                             <div class="flex flex-col">
-                                <p data-i18n="contact.mail.title" class="font-bold text-sm sm:text-base lg:text-lg">Mail us</p>
+                                <p data-i18n="contact.mail.title" class="font-bold text-sm sm:text-base lg:text-lg">Mail
+                                    us</p>
                                 <p id="email" class="text-sm text-dark-blue sm:text-base lg:text-lg"></p>
                             </div>
                         </a>
                     </div>
-                    <div class="p-5 flex flex-col justify-center gap-6 bg-white rounded-xl border border-grey-100 sm:mx-auto">
+                    <div
+                        class="p-5 flex flex-col justify-center gap-6 bg-white rounded-xl border border-grey-100 sm:mx-auto">
                         <div class="flex items-center">
                             <div
-                                class="mr-3 size-10 rounded-lg bg-cayan/10 flex items-center justify-center text-cayan">
+                                class="mr-3 size-10 rounded-lg bg-cyan/10 flex items-center justify-center text-cyan">
                                 <span class="material-symbols-outlined">schedule</span>
                             </div>
                             <h4 data-i18n="contact.schedule.title"
-                                class="text-sm font-bold uppercase tracking-wider text-cayan sm:text-base">availability
+                                class="text-sm font-bold uppercase tracking-wider text-cyan sm:text-base">availability
                             </h4>
                         </div>
                         <table class="[&_td]:pr-3 [&_td]:last:pr-0 [&_td]:text-sm [&_td]:font-medium sm:hidden">
@@ -508,27 +521,27 @@
                             </tr>
                         </table>
                     </div>
-                    
+
                 </div>
                 <div
-                        class="p-4 flex flex-col justify-center items-start gap-3 rounded-xl border-l-4 border-l-orange border border-light-grey bg-white shadow-sm">
-                        <p data-i18n="contact.addinfo.title"
-                            class="text-dark-grey text-lg font-bold leading-tight sm:text-xl">
-                            Important information:</p>
-                        <div class="text-dark-blue text-sm font-normal leading-relaxed sm:text-base">
-                            <p data-i18n="contact.addinfo.description" class="inline">
-                                Sign up for theory exam, fill health insurence or authorise the driving school
-                                visit
-                            </p><a id="cbrwebsite" href="https://www.mijncbr.nl" target="_blank"
-                                class="font-semibold"></a>
-                        </div>
+                    class="p-4 flex flex-col justify-center items-start gap-3 rounded-xl border-l-4 border-l-orange border border-light-grey bg-white shadow-sm">
+                    <p data-i18n="contact.addinfo.title"
+                        class="text-dark-grey text-lg font-bold leading-tight sm:text-xl">
+                        Important information:</p>
+                    <div class="text-dark-blue text-sm font-normal leading-relaxed sm:text-base">
+                        <p data-i18n="contact.addinfo.description" class="inline">
+                            Sign up for theory exam, fill health insurence or authorise the driving school
+                            visit
+                        </p><a id="cbrwebsite" href="https://www.mijncbr.nl" target="_blank" class="font-semibold"></a>
                     </div>
+                </div>
             </div>
             <div
                 class="flex flex-col justify-between bg-light-grey/40 rounded-t-xl sm:rounded-l-xl sm:rounded-r-xl sm:flex-row lg:rounded-l-2xl lg:rounded-r-2xl">
                 <div class="px-8 flex flex-col justify-center gap-2 p-5">
                     <h5 data-i18n="contact.details.title"
-                        class="mb-3 text-lg font-semibold text-cayan uppercase leading-tight sm:text-xl lg:text-2xl">Driving school
+                        class="mb-3 text-lg font-semibold text-cyan uppercase leading-tight sm:text-xl lg:text-2xl">
+                        Driving school
                         information</h5>
                     <div class="text-base sm:text-lg lg:text-xl">
                         <p data-i18n="contact.details.address"
@@ -536,8 +549,8 @@
                         <span id="address" class="text-dark-grey font-semibold"></span>
                     </div>
                     <div class="text-base sm:text-lg lg:text-xl">
-                        <p data-i18n="contact.details.kvknum"
-                            class="inline text-dark-blue font-normal leading-relaxed">KVK number:
+                        <p data-i18n="contact.details.kvknum" class="inline text-dark-blue font-normal leading-relaxed">
+                            KVK number:
                         </p>
                         <span id="kvknum" class="text-dark-grey font-semibold"></span>
                     </div>
@@ -555,31 +568,27 @@
                         class="bg-orange text-white text-sm font-bold uppercase rounded px-2 py-1 w-fit sm:text-lg">
                         Expert Automatic Training
                     </p>
-                    <!-- <h3 data-i18n="home.title"
-                        class="sm:max-w-3/4 text-white text-4xl font-black leading-[1.1] sm:text-5xl">
-                        Master the Road with Moen
-                    </h3> -->
                 </div>
             </div>
-
         </section>
     </main>
 
     <footer class="fixed bottom-0 left-0 right-0 bg-white/90 border-t border-light-grey pb-2">
-        <div class="flex justify-around items-center h-16 max-w-md mx-auto">
-            <a class="flex flex-col items-center gap-1 text-cayan" href="">
+        <nav class="flex justify-around items-center h-16 max-w-md mx-auto 
+        [&_a]:flex [&_a]:flex-col [&_a]:items-center [&_a]:gap-1 [&_a]:hover:text-cyan">
+            <a data-target="home" class="nav-btn w-1/3 shrink-0" href="">
                 <span class="material-symbols-outlined text-[24px]">home</span>
-                <span class="text-[10px] font-bold">Home</span>
+                <span data-i18n="nav.home" class="text-[10px] font-bold">Home</span>
             </a>
-            <a class="flex flex-col items-center gap-1 text-dark-blue" href="#lessons">
+            <a data-target="lessons" class="nav-btn w-1/3 shrink-0" href="#lessons">
                 <span class="material-symbols-outlined text-[24px]">grid_view</span>
-                <span class="text-[10px] font-medium">Packages</span>
+                <span data-i18n="nav.packages" class="text-[10px] font-medium">Packages</span>
             </a>
-            <a class="flex flex-col items-center gap-1 text-dark-blue" href="#contact">
+            <a data-target="contact" class="nav-btn w-1/3 shrink-0" href="#contact">
                 <span class="material-symbols-outlined text-[24px]">chat_bubble</span>
-                <span class="text-[10px] font-medium">Contact</span>
+                <span data-i18n="nav.contact" class="text-[10px] font-medium">Contact</span>
             </a>
-        </div>
+        </nav>
     </footer>
 
 </body>

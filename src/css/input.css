@@ -10,10 +10,21 @@
     --color-background-dark: #0f2123;
     --color-dark-grey: #101818;
     --color-light-grey: #dae5e7;
-    --color-cayan: #008c9e;
+    --color-cyan: #008c9e;
     --color-orange: #FF8A5B;
     --color-dark-blue: #5e878d;
     --color-grey: #6a7282;
     --color-grey-100: #f3f4f6;
     --color-green: #25D366;
+}
+
+@layer components {
+  .nav-btn {
+    color: var(--color-dark-blue);
+  }
+
+  .nav-btn-active {
+    color: var(--color-cyan);
+    font-weight: bold;
+  }
 }
