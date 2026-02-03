@@ -1,34 +1,36 @@
-const language = document.getElementById("langToggle");
-let isNL = true;
-let currentLang = isNL ? "nl" : "en"; //change on local storage
+const langToggle = document.getElementById("langToggle");
+const thumb = document.getElementById("toggleThumb");
+const langNL = document.getElementById("langNL");
+const langEN = document.getElementById("langEN");
+const sections = document.querySelectorAll("section");
+const navButtons = document.querySelectorAll(".nav-btn");
+const defaultdLang = "nl";
+const secondaryLang = "en";
+
+let currentLang = localStorage.getItem("lang") || defaultdLang;
 
 let translation = {};
 let prices = {};
-let lessPrice;
+let lesPrice;
 let pracExamPrice;
 let ttExamPrice;
 
-language.addEventListener("click", () => {
-  isNL = !isNL;
+const setLang = (lang) => {
+  localStorage.setItem("lang", lang);
+  document.documentElement.lang = lang;
+};
 
-  const thumb = document.getElementById("toggleThumb");
-  const langNL = document.getElementById("langNL");
-  const langEN = document.getElementById("langEN");
-
-  if (isNL) {
+function setThumb(lang) {
+  if (lang === "nl") {
     thumb.classList.remove("translate-x-9");
-    langNL.classList.add("text-cayan");
-    langEN.classList.remove("text-cayan");
+    langNL.classList.add("text-cyan");
+    langEN.classList.remove("text-cyan");
   } else {
     thumb.classList.add("translate-x-9");
-    langEN.classList.add("text-cayan");
-    langNL.classList.remove("text-cayan");
+    langEN.classList.add("text-cyan");
+    langNL.classList.remove("text-cyan");
   }
-
-  currentLang = isNL ? "nl" : "en";
-  loadLanguage(currentLang);
-  //   updateDiscount();
-});
+}
 
 async function loadLanguage(lang) {
   try {
@@ -38,7 +40,7 @@ async function loadLanguage(lang) {
     await applyTranslation();
     updateDiscount();
   } catch (err) {
-    console.log(err);
+    console.err(`Couldn't load language ${err}`);
   }
 }
 
@@ -47,7 +49,7 @@ async function getPrice() {
     const response = await fetch("src/data/price.json");
     prices = await response.json();
 
-    lessPrice = prices.oneLess;
+    lesPrice = prices.oneLess;
 
     Object.entries(prices).forEach(([key, value]) => {
       const price = new Intl.NumberFormat("nl-NL", {
@@ -123,13 +125,13 @@ function updateLink(elementId, text) {
 }
 
 const CalcDiscount = (
-  nLess,
+  nLes,
   packagePrice,
   pracExamPrice = 0,
   ttExamPrice = 0,
 ) => {
   const discountCount =
-    nLess * lessPrice + pracExamPrice + ttExamPrice - packagePrice;
+    nLes * lesPrice + pracExamPrice + ttExamPrice - packagePrice;
 
   return new Intl.NumberFormat("nl-NL", {
     style: "currency",
@@ -178,10 +180,39 @@ function updateDiscount() {
 }
 
 async function init() {
+  if (!localStorage.getItem("lang")) setLang(currentLang);
+
+  setThumb(currentLang);
   await loadLanguage(currentLang);
   await getPrice();
   updateDiscount();
   loadContacts();
 }
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const elemId = entry.target.id;
+
+        navButtons.forEach((btn) => {
+          btn.classList.toggle("nav-btn-active", btn.dataset.target === elemId);
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  },
+);
+
+sections.forEach(section => observer.observe(section));
+
+langToggle.addEventListener("click", () => {
+  currentLang = currentLang === defaultdLang ? secondaryLang : defaultdLang;
+  setLang(currentLang);
+  setThumb(currentLang);
+  loadLanguage(currentLang);
+});
 
 init();
