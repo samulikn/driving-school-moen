@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link rel="stylesheet" href="src/css/output.css" />
+    <link rel="stylesheet" href="./css/output.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <script src="src/script/main.js" defer></script>
+    <script src="./script/main.js" defer></script>
     <title data-i18n="meta.title">Moen</title>
 </head>
 
-<body class="bg-background-light text-dark-grey pb-20 w-full">
+<body class="font-rubik bg-background-light text-dark-grey pb-20 w-full">
     <header class="bg-white/80 backdrop-blur-md border-b border-light-grey">
         <div class="flex items-center p-4 lg:px-12 justify-between w-full mx-auto">
             <div class="flex items-center gap-2">
@@ -36,8 +36,8 @@
     <main class="mx-auto flex flex-col sm:px-8 ">
         <section id="home" class="pt-4 flex flex-col gap-6 lg:flex-row-reverse sm:pt-8">
             <div
-                class="px-8 py-10 flex flex-col-reverse justify-center gap-6 bg-cover bg-center bg-no-repeat bg-[url('../../src/assets/images/school_car_667.webp')]
-                            sm:bg-[url('../../src/assets/images/school_car_768.webp')] lg:bg-[url('../../src/assets/images/school_car_1024.webp')]
+                class="px-8 py-10 flex flex-col-reverse justify-center gap-6 bg-cover bg-center bg-no-repeat bg-[url('../images/school_car_667.webp')]
+                            sm:bg-[url('../images/school_car_768.webp')] lg:bg-[url('../images/school_car_1024.webp')]
                             sm:rounded-xl lg:rounded-2xl overflow-hidden min-h-105 sm:h-198 sm:pl-16 lg:w-5/8 shrink-0">
                 <div data-i18n="home.specialization"
                     class="bg-orange text-white text-sm font-bold uppercase rounded px-2 py-1 w-fit sm:text-lg">
@@ -561,8 +561,8 @@
                         <span id="schoolnum" class="text-dark-grey font-semibold"></span>
                     </div>
                 </div>
-                <div class="px-8 py-10 flex items-end sm:w-3/5 gap-4 bg-cover bg-top bg-no-repeat bg-[url('../../src/assets/images/inside_667.webp')]
-                            sm:bg-[url('../../src/assets/images/inside_768.webp')] lg:bg-[url('../../src/assets/images/inside_1024.webp')]
+                <div class="px-8 py-10 flex items-end sm:w-3/5 gap-4 bg-cover bg-top bg-no-repeat bg-[url('../images/inside_667.webp')]
+                            sm:bg-[url('../images/inside_768.webp')] lg:bg-[url('../images/inside_1024.webp')]
                             sm:rounded-r-xl lg:rounded-r-2xl overflow-hidden min-h-72 sm:min-h-96 sm:pl-16 shrink-0">
                     <p data-i18n="contact.summary"
                         class="bg-orange text-white text-sm font-bold uppercase rounded px-2 py-1 w-fit sm:text-lg">
@@ -578,7 +578,7 @@
         [&_a]:flex [&_a]:flex-col [&_a]:items-center [&_a]:gap-1 [&_a]:hover:text-cyan">
             <a data-target="home" class="nav-btn w-1/3 shrink-0" href="">
                 <span class="material-symbols-outlined text-[24px]">home</span>
-                <span data-i18n="nav.home" class="text-[10px] font-bold">Home</span>
+                <span data-i18n="nav.home" class="text-[10px] font-medium">Home</span>
             </a>
             <a data-target="lessons" class="nav-btn w-1/3 shrink-0" href="#lessons">
                 <span class="material-symbols-outlined text-[24px]">grid_view</span>

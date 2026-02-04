@@ -1,5 +1,5 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -49,6 +49,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-rubik: "Rubik", sans-serif;
     --color-background-light: #f5f8f8;
     --color-dark-grey: #101818;
     --color-light-grey: #dae5e7;
@@ -488,11 +489,11 @@
       background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
     }
   }
-  .bg-\[url\(\'\.\.\/\.\.\/src\/assets\/images\/inside_667\.webp\'\)\] {
-    background-image: url('../../src/assets/images/inside_667.webp');
+  .bg-\[url\(\'\.\.\/images\/inside_667\.webp\'\)\] {
+    background-image: url('../images/inside_667.webp');
   }
-  .bg-\[url\(\'\.\.\/\.\.\/src\/assets\/images\/school_car_667\.webp\'\)\] {
-    background-image: url('../../src/assets/images/school_car_667.webp');
+  .bg-\[url\(\'\.\.\/images\/school_car_667\.webp\'\)\] {
+    background-image: url('../images/school_car_667.webp');
   }
   .bg-cover {
     background-size: cover;
@@ -556,6 +557,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .font-rubik {
+    font-family: var(--font-rubik);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -787,14 +791,14 @@
       border-bottom-right-radius: var(--radius-xl);
     }
   }
-  .sm\:bg-\[url\(\'\.\.\/\.\.\/src\/assets\/images\/inside_768\.webp\'\)\] {
+  .sm\:bg-\[url\(\'\.\.\/images\/inside_768\.webp\'\)\] {
     @media (width >= 40rem) {
-      background-image: url('../../src/assets/images/inside_768.webp');
+      background-image: url('../images/inside_768.webp');
     }
   }
-  .sm\:bg-\[url\(\'\.\.\/\.\.\/src\/assets\/images\/school_car_768\.webp\'\)\] {
+  .sm\:bg-\[url\(\'\.\.\/images\/school_car_768\.webp\'\)\] {
     @media (width >= 40rem) {
-      background-image: url('../../src/assets/images/school_car_768.webp');
+      background-image: url('../images/school_car_768.webp');
     }
   }
   .sm\:px-8 {
@@ -895,14 +899,14 @@
       border-bottom-right-radius: var(--radius-2xl);
     }
   }
-  .lg\:bg-\[url\(\'\.\.\/\.\.\/src\/assets\/images\/inside_1024\.webp\'\)\] {
+  .lg\:bg-\[url\(\'\.\.\/images\/inside_1024\.webp\'\)\] {
     @media (width >= 64rem) {
-      background-image: url('../../src/assets/images/inside_1024.webp');
+      background-image: url('../images/inside_1024.webp');
     }
   }
-  .lg\:bg-\[url\(\'\.\.\/\.\.\/src\/assets\/images\/school_car_1024\.webp\'\)\] {
+  .lg\:bg-\[url\(\'\.\.\/images\/school_car_1024\.webp\'\)\] {
     @media (width >= 64rem) {
-      background-image: url('../../src/assets/images/school_car_1024.webp');
+      background-image: url('../images/school_car_1024.webp');
     }
   }
   .lg\:px-12 {
