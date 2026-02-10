@@ -34,7 +34,7 @@ function setThumb(lang) {
 
 async function loadLanguage(lang) {
   try {
-    const response = await fetch(`src/i18n/${lang}.json`);
+    const response = await fetch(`i18n/${lang}.json`);
     translation = await response.json();
 
     await applyTranslation();
@@ -46,7 +46,7 @@ async function loadLanguage(lang) {
 
 async function getPrice() {
   try {
-    const response = await fetch("src/data/price.json");
+    const response = await fetch("data/price.json");
     prices = await response.json();
 
     lesPrice = prices.oneLess;
@@ -68,7 +68,7 @@ async function getPrice() {
 
 async function loadContacts() {
   try {
-    const response = await fetch("src/data/contact.json");
+    const response = await fetch("data/contact.json");
     const contacts = await response.json();
 
     Object.entries(contacts).forEach(([key, value]) => {
